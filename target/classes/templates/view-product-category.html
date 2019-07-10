@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+<!--    <title  th:text="${productDTO.getProductName()}"></title>-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    .product-card img {
+        width: 135px;
+        height: 135px;
+    }
+
+    .product-card a {
+        color: black;
+        text-decoration: none !important;
+    }
+
+    .product-card {
+        position: relative;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        height: 360px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+        margin-bottom: 15px;
+    }
+
+    .price {
+        color: grey;
+        font-size: 18px;
+    }
+
+    .product-card button {
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .product-card button:hover {
+        opacity: 0.7;
+    }
+
+    /*narbar*/
+    .search-form {
+        width: 400px !important;
+    }
+
+    .navbar-brand {
+        margin-right: 45px;
+    }
+
+    .list-product {
+        margin-top: 100px;
+    }
+
+    /*sidebar    */
+
+
+    #sidebar-wrapper {
+        min-height: 100vh;
+        margin-left: -15rem;
+        -webkit-transition: margin .25s ease-out;
+        -moz-transition: margin .25s ease-out;
+        -o-transition: margin .25s ease-out;
+        transition: margin .25s ease-out;
+    }
+
+    #sidebar-wrapper .sidebar-heading {
+        padding: 0.875rem 1.25rem;
+        font-size: 1.2rem;
+    }
+
+    #sidebar-wrapper .list-group {
+        width: 15rem;
+    }
+
+    #page-content-wrapper {
+        min-width: 100vw;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    @media (min-width: 768px) {
+        #sidebar-wrapper {
+            margin-left: 0;
+        }
+
+        #page-content-wrapper {
+            min-width: 0;
+            width: 100%;
+        }
+
+        #wrapper.toggled #sidebar-wrapper {
+            margin-left: -15rem;
+        }
+    }
+
+    .list-group-item, .sidebar {
+        width: 224px;
+    }
+
+    /*category - detail    */
+    .category-detail {
+        margin: 20px;
+    }
+</style>
+</head>
+<body>
+<div class="container-fluid">
+    <nav th:replace="fragments/header :: header"></nav>
+    <div class="row  list-product">
+        <div class="col-sm-2">
+            <!-- Sidebar -->
+            <div th:replace="fragments/sidebar :: sidebar"></div>
+            <!-- /#sidebar-wrapper -->
+        </div>
+        <div class="col-sm-10">
+            <div class="category-detail">
+                <h5 th:text="${categoryDTO.getCategoryName()}"></h5>
+                <p th:text="${categoryDTO.getCategoryDecription()}"></p>
+            </div>
+            <div class="row">
+                <div class="col-sm-3" th:each="product : ${productDTOList}">
+                    <div th:replace="fragments/product-card :: product-card"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section th:replace="fragments/footer :: footer"></section>
+
+</div>
+
+</body>
+</html>

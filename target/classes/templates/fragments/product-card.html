@@ -1,0 +1,18 @@
+<div  th:fragment="product-card" class="product-card">
+    <a th:href="@{/product/{id}(id=${product.getProductId()})}">
+        <img th:src="@{${product.getOneImage()}}">
+    </a>
+    <h6>
+        <a th:text="${product.getProductName()}"
+           th:href="@{/product/{id}(id=${product.getProductId()})}"/>
+    </h6>
+    <p class="price">
+        <span>USD $</span>
+        <span th:text="${product.getProductPrice()}"></span>
+    </p>
+    <p>
+        <span>By </span>
+        <span th:text="${product.getCategory()}"></span>
+    </p>
+    <p><button>Add to Cart</button></p>
+</div>
