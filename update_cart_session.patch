@@ -1,0 +1,1346 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(date 1562749622000)
++++ .idea/workspace.xml	(date 1562921841052)
+@@ -1,7 +1,25 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="3da01970-8f96-430f-b978-0697b53634ec" name="Default Changelist" comment="" />
++    <list default="true" id="3da01970-8f96-430f-b978-0697b53634ec" name="Default Changelist" comment="update cart session">
++      <change afterPath="$PROJECT_DIR$/src/main/java/huynh198/com/github/controller/CartController.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/huynh198/com/github/model/CartDTO.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/huynh198/com/github/model/CartItemDTO.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/huynh198/com/github/service/CartService.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/huynh198/com/github/service/CartServiceImpl.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/view-cart.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/huynh198/com/github/entity/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huynh198/com/github/entity/CartItem.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/product-card.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/product-card.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/view-all-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/view-all-product.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/view-product-category.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/view-product-category.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/view-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/view-product.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/huynh198/com/github/entity/CartItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/huynh198/com/github/entity/CartItem.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/templates/fragments/product-card.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/fragments/product-card.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/templates/view-all-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/view-all-product.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/templates/view-product-category.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/view-product-category.html" afterDir="false" />
++    </list>
+     <ignored path="$PROJECT_DIR$/out/" />
+     <ignored path="$PROJECT_DIR$/target/" />
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+@@ -32,8 +50,8 @@
+       <file pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/view-all-product.html">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="-984">
+-              <caret line="76" column="46" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
++            <state relative-caret-position="221">
++              <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+             </state>
+           </provider>
+         </entry>
+@@ -41,20 +59,38 @@
+       <file pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/header.html">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="323">
+-              <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
++            <state relative-caret-position="68">
++              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+             </state>
+           </provider>
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="true">
+-        <entry file="file://$PROJECT_DIR$/src/main/java/huynh198/com/github/controller/MainController.java">
++        <entry file="file://$PROJECT_DIR$/src/main/java/huynh198/com/github/controller/CartController.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="187">
+-              <caret line="42" column="70" lean-forward="true" selection-start-line="42" selection-start-column="70" selection-end-line="42" selection-end-column="70" />
++            <state relative-caret-position="118">
++              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+               <folding>
+                 <element signature="imports" expanded="true" />
+               </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/view-cart.html">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="308">
++              <caret line="30" column="63" lean-forward="true" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/view-product.html">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="-97">
++              <caret line="133" selection-start-line="133" selection-end-line="133" />
+             </state>
+           </provider>
+         </entry>
+@@ -84,8 +120,12 @@
+       <find>one</find>
+       <find>&lt;a href=&quot;javascript:void();&quot;&gt;</find>
+       <find>section</find>
++      <find>button</find>
+     </findStrings>
+   </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
+   <component name="IdeDocumentHistory">
+     <option name="CHANGED_PATHS">
+       <list>
+@@ -98,7 +138,6 @@
+         <option value="$PROJECT_DIR$/src/main/java/huynh198/com/github/model/CartItem.java" />
+         <option value="$PROJECT_DIR$/src/main/java/huynh198/com/github/model/Category.java" />
+         <option value="$PROJECT_DIR$/src/main/java/huynh198/com/github/model/Customer.java" />
+-        <option value="$PROJECT_DIR$/src/main/java/huynh198/com/github/model/Cart.java" />
+         <option value="$PROJECT_DIR$/src/main/resources/templates/list-all-product.html" />
+         <option value="$PROJECT_DIR$/src/main/java/huynh198/com/github/controller/Main.java" />
+         <option value="$PROJECT_DIR$/src/main/java/huynh198/com/github/dao/ProdutDao.java" />
+@@ -110,7 +149,6 @@
+         <option value="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.css" />
+         <option value="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.js" />
+         <option value="$PROJECT_DIR$/src/main/java/huynh198/com/github/entity/Product.java" />
+-        <option value="$PROJECT_DIR$/src/main/resources/templates/view-product.html" />
+         <option value="$PROJECT_DIR$/src/main/java/huynh198/com/github/dao/ProductDaoImpl.java" />
+         <option value="$PROJECT_DIR$/src/main/java/huynh198/com/github/model/ProductDTO.java" />
+         <option value="$PROJECT_DIR$/src/main/java/huynh198/com/github/service/ProductServiceImpl.java" />
+@@ -123,11 +161,20 @@
+         <option value="$PROJECT_DIR$/src/main/java/huynh198/com/github/service/CategoryService.java" />
+         <option value="$PROJECT_DIR$/src/main/java/huynh198/com/github/service/CategoryServiceImpl.java" />
+         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/sidebar.html" />
+-        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/product-card.html" />
+         <option value="$PROJECT_DIR$/src/main/java/huynh198/com/github/controller/MainController.java" />
++        <option value="$PROJECT_DIR$/src/main/java/huynh198/com/github/entity/CartItem.java" />
++        <option value="$PROJECT_DIR$/src/main/java/huynh198/com/github/model/Cart.java" />
++        <option value="$PROJECT_DIR$/src/main/java/huynh198/com/github/model/CartDTO.java" />
++        <option value="$PROJECT_DIR$/src/main/java/huynh198/com/github/service/CartService.java" />
++        <option value="$PROJECT_DIR$/src/main/java/huynh198/com/github/service/CartServiceImpl.java" />
++        <option value="$PROJECT_DIR$/src/main/java/huynh198/com/github/model/CartItemDTO.java" />
+         <option value="$PROJECT_DIR$/src/main/resources/templates/view-product-category.html" />
++        <option value="$PROJECT_DIR$/src/main/resources/templates/view-all-product.html" />
+         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" />
+-        <option value="$PROJECT_DIR$/src/main/resources/templates/view-all-product.html" />
++        <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/product-card.html" />
++        <option value="$PROJECT_DIR$/src/main/resources/templates/view-product.html" />
++        <option value="$PROJECT_DIR$/src/main/java/huynh198/com/github/controller/CartController.java" />
++        <option value="$PROJECT_DIR$/src/main/resources/templates/view-cart.html" />
+       </list>
+     </option>
+   </component>
+@@ -140,12 +187,7 @@
+   </component>
+   <component name="MavenProjectNavigator">
+     <treeState>
+-      <expand>
+-        <path>
+-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+-          <item name="ShopppingCartSpringBoot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+-        </path>
+-      </expand>
++      <expand />
+       <select />
+     </treeState>
+   </component>
+@@ -154,6 +196,9 @@
+     <option name="width" value="697" />
+     <option name="height" value="735" />
+   </component>
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
+   <component name="ProjectView">
+     <navigator proportions="" version="1">
+       <foldersAlwaysOnTop value="true" />
+@@ -282,16 +327,18 @@
+           <select />
+         </subPane>
+       </pane>
+-      <pane id="PackagesPane" />
+       <pane id="Scope" />
++      <pane id="PackagesPane" />
+     </panes>
+   </component>
+   <component name="PropertiesComponent">
++    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+     <property name="RequestMappingsPanelOrder0" value="0" />
+     <property name="RequestMappingsPanelOrder1" value="1" />
+     <property name="RequestMappingsPanelWidth0" value="75" />
+     <property name="RequestMappingsPanelWidth1" value="75" />
++    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="aspect.path.notification.shown" value="true" />
+     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+@@ -360,19 +407,20 @@
+       <workItem from="1562479103905" duration="26455000" />
+       <workItem from="1562578971432" duration="11269000" />
+       <workItem from="1562605903916" duration="24611000" />
+-      <workItem from="1562730356586" duration="4153000" />
++      <workItem from="1562730356586" duration="6026000" />
++      <workItem from="1562857610441" duration="16395000" />
+     </task>
+     <servers />
+   </component>
+   <component name="TimeTrackingManager">
+-    <option name="totallyTimeSpent" value="96450000" />
++    <option name="totallyTimeSpent" value="114718000" />
+   </component>
+   <component name="ToolWindowManager">
+     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+     <editor active="true" />
+     <layout>
+       <window_info id="Persistence" order="0" side_tool="true" />
+-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2322239" />
++      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.23600605" />
+       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+       <window_info id="Image Layers" order="3" />
+       <window_info id="Designer" order="4" />
+@@ -382,8 +430,8 @@
+       <window_info id="Web" order="8" side_tool="true" />
+       <window_info anchor="bottom" id="Message" order="0" />
+       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.06873977" />
+-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
++      <window_info anchor="bottom" id="Run" order="2" weight="0.32242227" />
++      <window_info anchor="bottom" id="Debug" order="3" weight="0.2831424" />
+       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+       <window_info anchor="bottom" id="TODO" order="6" />
+@@ -394,21 +442,21 @@
+       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3289689" />
+       <window_info anchor="bottom" id="Spring" order="12" />
+       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3289689" />
+-      <window_info anchor="bottom" id="Messages" order="14" weight="0.3289689" />
++      <window_info anchor="bottom" id="Messages" order="14" weight="0.6792144" />
+       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
+       <window_info anchor="right" id="Palette" order="3" />
+       <window_info anchor="right" id="Theme Preview" order="4" />
+-      <window_info anchor="right" id="Maven" order="5" weight="0.32980332" />
+-      <window_info anchor="right" id="Capture Analysis" order="6" />
+-      <window_info anchor="right" id="Palette&#9;" order="7" />
++      <window_info anchor="right" id="Capture Analysis" order="5" />
++      <window_info anchor="right" id="Palette&#9;" order="6" />
++      <window_info anchor="right" id="Maven" order="7" weight="0.32980332" />
+       <window_info anchor="right" id="Database" order="8" weight="0.32980332" />
+       <window_info anchor="right" id="Bean Validation" order="9" />
+     </layout>
+     <layout-to-restore>
+       <window_info id="Persistence" order="0" side_tool="true" />
+-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22163388" />
++      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23600605" />
+       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+       <window_info id="Image Layers" order="3" />
+       <window_info id="Designer" order="4" />
+@@ -418,7 +466,7 @@
+       <window_info id="Web" order="8" side_tool="true" />
+       <window_info anchor="bottom" id="Message" order="0" />
+       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32242227" />
++      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27659574" />
+       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
+       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+@@ -436,72 +484,21 @@
+       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
+       <window_info anchor="right" id="Palette" order="3" />
+       <window_info anchor="right" id="Theme Preview" order="4" />
+-      <window_info anchor="right" id="Maven" order="5" weight="0.32980332" />
+-      <window_info anchor="right" id="Capture Analysis" order="6" />
+-      <window_info anchor="right" id="Palette&#9;" order="7" />
++      <window_info anchor="right" id="Capture Analysis" order="5" />
++      <window_info anchor="right" id="Palette&#9;" order="6" />
++      <window_info anchor="right" id="Maven" order="7" weight="0.32980332" />
+       <window_info anchor="right" id="Database" order="8" weight="0.32980332" />
+       <window_info anchor="right" id="Bean Validation" order="9" />
+     </layout-to-restore>
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="1" />
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="update cart session" />
++    <option name="LAST_COMMIT_MESSAGE" value="update cart session" />
+   </component>
+   <component name="editorHistoryManager">
+-    <entry file="file://$PROJECT_DIR$/src/main/java/huynh198/com/github/entity/Customer.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="374">
+-          <caret line="32" column="34" selection-start-line="30" selection-start-column="2" selection-end-line="32" selection-end-column="34" />
+-          <folding>
+-            <element signature="imports" expanded="true" />
+-          </folding>
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/npm.js">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="34">
+-          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/Object.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="114">
+-          <caret line="244" column="18" selection-start-line="244" selection-start-column="18" selection-end-line="244" selection-end-column="18" />
+-          <folding>
+-            <element signature="e#10225#10226#0" expanded="true" />
+-            <element signature="e#10308#10309#0" expanded="true" />
+-          </folding>
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="204">
+-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/src/main/java/huynh198/com/github/ShopppingCartSpringBootApplication.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="119">
+-          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+-          <folding>
+-            <element signature="imports" expanded="true" />
+-          </folding>
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/pom.xml">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="304">
+-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/img/arduino/4/1.jpg" />
+-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/img/arduino/5/1.jpg" />
+-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/img/arduino/5/3.jpg" />
+     <entry file="file://$PROJECT_DIR$/src/main/resources/static/img/arduino/6/2.jpg" />
+     <entry file="file://$PROJECT_DIR$/src/main/resources/static/img/arduino/7/2.jpg" />
+     <entry file="file://$PROJECT_DIR$/src/main/resources/static/img/arduino/7/1.jpg" />
+@@ -595,13 +592,6 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/view-product.html">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state>
+-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+-        </state>
+-      </provider>
+-    </entry>
+     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/list-all-product.html" />
+     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html">
+       <provider selected="true" editor-type-id="text-editor">
+@@ -614,20 +604,6 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="68">
+           <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/src/main/java/huynh198/com/github/entity/Category.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="311">
+-          <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+-          <folding>
+-            <element signature="imports" expanded="true" />
+-            <element signature="e#1446#1447#0" expanded="true" />
+-            <element signature="e#1487#1488#0" expanded="true" />
+-            <element signature="e#1555#1556#0" expanded="true" />
+-            <element signature="e#1615#1616#0" expanded="true" />
+-          </folding>
+         </state>
+       </provider>
+     </entry>
+@@ -691,27 +667,58 @@
+           <folding>
+             <element signature="imports" expanded="true" />
+           </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/main/java/huynh198/com/github/dao/ProductDaoImpl.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="204">
++          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
++          <folding>
++            <element signature="imports" expanded="true" />
++            <element signature="e#0#23#1" expanded="true" />
++            <element signature="e#0#66#1" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/sidebar.html">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="17">
++          <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="28" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/main/java/huynh198/com/github/entity/Cart.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="153">
++          <caret line="11" column="7" lean-forward="true" selection-end-line="66" />
+         </state>
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/src/main/java/huynh198/com/github/service/CategoryServiceImpl.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="170">
+-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
++        <state relative-caret-position="192">
++          <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+           <folding>
+             <element signature="imports" expanded="true" />
+           </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/main/java/huynh198/com/github/dao/ProductDaoImpl.java">
++    <entry file="file://$PROJECT_DIR$/src/main/java/huynh198/com/github/entity/CartItem.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="342">
++          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/main/java/huynh198/com/github/entity/Category.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="204">
+-          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
++        <state relative-caret-position="311">
++          <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+           <folding>
+             <element signature="imports" expanded="true" />
+-            <element signature="e#0#23#1" expanded="true" />
+-            <element signature="e#0#66#1" expanded="true" />
+           </folding>
+         </state>
+       </provider>
+@@ -727,48 +734,132 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/sidebar.html">
++    <entry file="file://$PROJECT_DIR$/src/main/java/huynh198/com/github/model/CartDTO.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="17">
+-          <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="28" />
++        <state relative-caret-position="102">
++          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
++          <folding>
++            <element signature="e#432#433#0" expanded="true" />
++            <element signature="e#461#462#0" expanded="true" />
++            <element signature="e#505#506#0" expanded="true" />
++            <element signature="e#541#542#0" expanded="true" />
++            <element signature="e#587#588#0" expanded="true" />
++            <element signature="e#618#619#0" expanded="true" />
++            <element signature="e#677#678#0" expanded="true" />
++            <element signature="e#717#718#0" expanded="true" />
++            <element signature="e#754#755#0" expanded="true" />
++            <element signature="e#787#788#0" expanded="true" />
++            <element signature="e#839#840#0" expanded="true" />
++            <element signature="e#883#884#0" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/product-card.html">
++    <entry file="file://$PROJECT_DIR$/src/main/java/huynh198/com/github/service/CartServiceImpl.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="102">
+-          <caret line="6" column="69" lean-forward="true" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
++        <state relative-caret-position="85">
++          <caret line="5" selection-start-line="5" selection-end-line="5" />
+         </state>
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/view-product-category.html">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="459">
+-          <caret line="137" column="18" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="18" />
++        <state relative-caret-position="-423">
++          <caret line="38" column="29" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="29" />
+           <folding>
+             <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+           </folding>
+         </state>
+       </provider>
+     </entry>
++    <entry file="file://$PROJECT_DIR$/src/main/java/huynh198/com/github/service/CartService.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="34">
++          <caret line="2" column="28" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="28" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/main/java/huynh198/com/github/controller/MainController.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="765">
++          <caret line="45" column="30" lean-forward="true" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
++          <folding>
++            <element signature="imports" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/main/java/huynh198/com/github/model/CartItemDTO.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="-3">
++          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
++          <folding>
++            <element signature="e#484#485#0" expanded="true" />
++            <element signature="e#517#518#0" expanded="true" />
++            <element signature="e#566#567#0" expanded="true" />
++            <element signature="e#610#611#0" expanded="true" />
++            <element signature="e#642#643#0" expanded="true" />
++            <element signature="e#673#674#0" expanded="true" />
++            <element signature="e#718#719#0" expanded="true" />
++            <element signature="e#758#759#0" expanded="true" />
++            <element signature="e#794#795#0" expanded="true" />
++            <element signature="e#826#827#0" expanded="true" />
++            <element signature="e#876#877#0" expanded="true" />
++            <element signature="e#918#919#0" expanded="true" />
++            <element signature="e#977#978#0" expanded="true" />
++            <element signature="e#1010#1011#0" expanded="true" />
++            <element signature="e#1066#1067#0" expanded="true" />
++            <element signature="e#1110#1111#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/product-card.html">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="278">
++          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/view-product.html">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="-97">
++          <caret line="133" selection-start-line="133" selection-end-line="133" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/header.html">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="68">
++          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
++        </state>
++      </provider>
++    </entry>
+     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/view-all-product.html">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="-984">
+-          <caret line="76" column="46" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
++        <state relative-caret-position="221">
++          <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/header.html">
++    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/view-cart.html">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="323">
+-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
++        <state relative-caret-position="308">
++          <caret line="30" column="63" lean-forward="true" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/main/java/huynh198/com/github/controller/MainController.java">
++    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="187">
+-          <caret line="42" column="70" lean-forward="true" selection-start-line="42" selection-start-column="70" selection-end-line="42" selection-end-column="70" />
++        <state relative-caret-position="339">
++          <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/main/java/huynh198/com/github/controller/CartController.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="118">
++          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+           <folding>
+             <element signature="imports" expanded="true" />
+           </folding>
+Index: src/main/java/huynh198/com/github/service/CartServiceImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/huynh198/com/github/service/CartServiceImpl.java	(date 1562921988991)
++++ src/main/java/huynh198/com/github/service/CartServiceImpl.java	(date 1562921988991)
+@@ -0,0 +1,13 @@
++package huynh198.com.github.service;
++
++public class CartServiceImpl implements CartService {
++    @Override
++    public void addProductToCart(int id) {
++
++    }
++
++    @Override
++    public void deleteProductFromCart(int id) {
++
++    }
++}
+Index: src/main/java/huynh198/com/github/service/CartService.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/huynh198/com/github/service/CartService.java	(date 1562862034156)
++++ src/main/java/huynh198/com/github/service/CartService.java	(date 1562862034156)
+@@ -0,0 +1,8 @@
++package huynh198.com.github.service;
++
++public interface CartService {
++
++    public void addProductToCart(int id);
++
++    public void deleteProductFromCart(int id);
++}
+Index: src/main/java/huynh198/com/github/controller/CartController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/huynh198/com/github/controller/CartController.java	(date 1562921988976)
++++ src/main/java/huynh198/com/github/controller/CartController.java	(date 1562921988976)
+@@ -0,0 +1,83 @@
++package huynh198.com.github.controller;
++
++import huynh198.com.github.model.CartDTO;
++import huynh198.com.github.model.CartItemDTO;
++import huynh198.com.github.model.ProductDTO;
++import huynh198.com.github.service.ProductService;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.stereotype.Controller;
++import org.springframework.ui.Model;
++import org.springframework.web.bind.annotation.GetMapping;
++import org.springframework.web.bind.annotation.PathVariable;
++
++import javax.servlet.http.HttpSession;
++import java.util.ArrayList;
++import java.util.List;
++
++@Controller
++public class CartController {
++
++    @Autowired
++    ProductService productService;
++
++    @GetMapping("/product/add-to-cart/{productId}")
++    public String getProductById(@PathVariable("productId") int productId, HttpSession httpSession,
++                                 Model model) {
++        ProductDTO productDTO = productService.getProductById(productId);
++
++        if (httpSession.getAttribute("cart") == null) {
++            CartDTO cartDTO = new CartDTO();
++            CartItemDTO cartItemDTO = new CartItemDTO();
++            cartItemDTO.setProductDTO(productDTO);
++            cartItemDTO.setQuantity(1);
++            cartItemDTO.setTotalCost(cartItemDTO.getQuantity() * productDTO.getProductPrice());
++            List<CartItemDTO> cartItemDTOList = new ArrayList<>();
++            cartItemDTOList.add(cartItemDTO);
++
++            cartDTO.setCartItem(cartItemDTOList);
++
++            httpSession.setAttribute("cart", cartDTO);
++        } else {
++            CartDTO cartDTO = (CartDTO) httpSession.getAttribute("cart");
++            List<CartItemDTO> cartItemDTOList = cartDTO.getCartItem();
++
++            boolean flag = false;
++
++            for (CartItemDTO cartItemDTO : cartItemDTOList) {
++                if (cartItemDTO.getProductDTO().getProductId() == productId) {
++                    cartItemDTO.setQuantity(cartItemDTO.getQuantity() + 1);
++                    cartItemDTO.setTotalCost(cartItemDTO.getQuantity() * productDTO.getProductPrice());
++                    flag = true;
++                }
++            }
++
++            if (!flag) {
++                CartItemDTO cartItemDTO = new CartItemDTO();
++                cartItemDTO.setProductDTO(productDTO);
++                cartItemDTO.setQuantity(1);
++                cartItemDTO.setTotalCost(cartItemDTO.getQuantity() * productDTO.getProductPrice());
++                cartItemDTOList.add(cartItemDTO);
++                cartDTO.setCartItem(cartItemDTOList);
++            }
++
++            httpSession.setAttribute("cart", cartDTO);
++        }
++
++        CartDTO cartDTO = (CartDTO) httpSession.getAttribute("cart");
++        model.addAttribute(cartDTO);
++        return "redirect:/product";
++    }
++
++    @GetMapping("/cart")
++    public String viewCart(HttpSession httpSession, Model model) {
++        CartDTO cartDTO = (CartDTO) httpSession.getAttribute("cart");
++
++        if (cartDTO == null) {
++            model.addAttribute("cartItems", "null");
++
++        } else {
++            model.addAttribute("cartItems", cartDTO.getCartItem());
++        }
++        return "view-cart";
++    }
++}
+Index: src/main/java/huynh198/com/github/model/CartDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/huynh198/com/github/model/CartDTO.java	(date 1562861732603)
++++ src/main/java/huynh198/com/github/model/CartDTO.java	(date 1562861732603)
+@@ -0,0 +1,45 @@
++package huynh198.com.github.model;
++
++import java.util.List;
++
++public class CartDTO {
++
++    private String cartId;
++
++    private List<CartItemDTO> cartItem;
++
++    private double totalPrice;
++
++    public CartDTO(String cartId, List<CartItemDTO> cartItem, double totalPrice) {
++        this.cartId = cartId;
++        this.cartItem = cartItem;
++        this.totalPrice = totalPrice;
++    }
++
++    public CartDTO() {
++    }
++
++    public String getCartId() {
++        return cartId;
++    }
++
++    public void setCartId(String cartId) {
++        this.cartId = cartId;
++    }
++
++    public List<CartItemDTO> getCartItem() {
++        return cartItem;
++    }
++
++    public void setCartItem(List<CartItemDTO> cartItem) {
++        this.cartItem = cartItem;
++    }
++
++    public double getTotalPrice() {
++        return totalPrice;
++    }
++
++    public void setTotalPrice(double totalPrice) {
++        this.totalPrice = totalPrice;
++    }
++}
+Index: src/main/resources/templates/view-cart.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/resources/templates/view-cart.html	(date 1562921988962)
++++ src/main/resources/templates/view-cart.html	(date 1562921988962)
+@@ -0,0 +1,43 @@
++<!DOCTYPE html>
++<html lang="en" xmlns:th="http://www.thymeleaf.org">
++<head>
++    <meta charset="UTF-8">
++    <title>Cart</title>
++    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
++    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
++    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
++    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
++</head>
++<body>
++
++<div class="container-fluid">
++    <nav th:replace="fragments/header :: header"></nav>
++
++    <div class="cart">
++        <table class="table">
++            <thead>
++            <tr>
++                <th scope="col">#</th>
++                <th scope="col">Name</th>
++                <th scope="col">Quantity</th>
++                <th scope="col">Price</th>
++                <th scope="col">Option</th>
++            </tr>
++            </thead>
++            <tbody th:if="${cartItems == 'null'}">
++            <th colspan="4">No Product</th>
++            </tbody>
++            <tbody th:if="${cartItems != 'null'}">
++            <tr th:each="cartItemDTO,i : ${cartItems}">
++                <th scope="row"><span th:text="${i.index + 1 }"></span></th>
++                <td scope="row"><span th:text="${cartItemDTO.getProductDTO().getProductName()}"></span></td>
++                <td><span th:text="${cartItemDTO.getQuantity()}"></span></td>
++                <td><span th:text="${cartItemDTO.getProductDTO().getProductPrice()}"></span></td>
++                <td> Delete</td>
++            </tr>
++            </tbody>
++        </table>
++    </div>
++</div>
++</body>
++</html>
+\ No newline at end of file
+Index: src/main/resources/templates/fragments/product-card.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/resources/templates/fragments/product-card.html	(date 1562749622000)
++++ src/main/resources/templates/fragments/product-card.html	(date 1562921989008)
+@@ -1,4 +1,6 @@
+-<div  th:fragment="product-card" class="product-card">
++<html lang="en" xmlns:th="http://www.thymeleaf.org">
++
++<div th:fragment="product-card" class="product-card">
+     <a th:href="@{/product/{id}(id=${product.getProductId()})}">
+         <img th:src="@{${product.getOneImage()}}">
+     </a>
+@@ -14,5 +16,7 @@
+         <span>By </span>
+         <span th:text="${product.getCategory()}"></span>
+     </p>
+-    <p><button>Add to Cart</button></p>
++    <p>
++        <a class="addProduct" th:href="@{/product/add-to-cart/{id}(id=${product.getProductId()})}">Add to Cart</a>
++    </p>
+ </div>
+\ No newline at end of file
+Index: src/main/java/huynh198/com/github/model/CartItemDTO.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/huynh198/com/github/model/CartItemDTO.java	(date 1562921988947)
++++ src/main/java/huynh198/com/github/model/CartItemDTO.java	(date 1562921988947)
+@@ -0,0 +1,54 @@
++package huynh198.com.github.model;
++
++public class CartItemDTO {
++
++    private int cartItemId;
++
++    private int quantity;
++
++    private double totalCost;
++
++    private ProductDTO productDTO;
++
++    public CartItemDTO(int cartItemId, int quantity, double totalCost, ProductDTO productDTO) {
++        this.cartItemId = cartItemId;
++        this.quantity = quantity;
++        this.totalCost = totalCost;
++        this.productDTO = productDTO;
++    }
++
++    public CartItemDTO() {
++    }
++
++    public int getCartItemId() {
++        return cartItemId;
++    }
++
++    public void setCartItemId(int cartItemId) {
++        this.cartItemId = cartItemId;
++    }
++
++    public int getQuantity() {
++        return quantity;
++    }
++
++    public void setQuantity(int quantity) {
++        this.quantity = quantity;
++    }
++
++    public double getTotalCost() {
++        return totalCost;
++    }
++
++    public void setTotalCost(double totalCost) {
++        this.totalCost = totalCost;
++    }
++
++    public ProductDTO getProductDTO() {
++        return productDTO;
++    }
++
++    public void setProductDTO(ProductDTO productDTO) {
++        this.productDTO = productDTO;
++    }
++}
+Index: src/main/resources/templates/view-product.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/resources/templates/view-product.html	(date 1562749622000)
++++ src/main/resources/templates/view-product.html	(date 1562921989022)
+@@ -130,6 +130,8 @@
+ </style>
+ <body>
+ <div class="container-fluid">
++    <nav th:replace="fragments/header :: header"></nav>
++
+     <br>
+     <div class="row">
+         <div class="col-sm-4">
+@@ -173,6 +175,10 @@
+             <div class="price-product">
+                 <span>USD $</span>
+                 <span th:text="${productDTO.getProductPrice()}"></span>
++            </div>
++            <div>
++                <a class="addProduct" th:href="@{/product/add-to-cart/{id}(id=${productDTO.getProductId()})}">Add to
++                    Cart</a>
+             </div>
+         </div>
+     </div>
+Index: src/main/resources/templates/fragments/header.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/resources/templates/fragments/header.html	(date 1562749622000)
++++ src/main/resources/templates/fragments/header.html	(date 1562915790781)
+@@ -15,7 +15,7 @@
+             </li>
+         </ul>
+         <div class="cart-container">
+-            <a class="cart-link" href="#menu">
++            <a class="cart-link" th:href="@{/cart}">
+                 <span class="cart-text fontawesome-shopping-cart">
+                   <span>Cart</span>
+                 </span>
+Index: src/main/resources/templates/view-all-product.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/resources/templates/view-all-product.html	(date 1562749622000)
++++ src/main/resources/templates/view-all-product.html	(date 1562900343822)
+@@ -36,7 +36,7 @@
+         font-size: 18px;
+     }
+ 
+-    .product-card button {
++    .product-card .addProduct {
+         position: absolute;
+         left: 0;
+         bottom: 5px;
+@@ -51,7 +51,7 @@
+         font-size: 18px;
+     }
+ 
+-    .product-card button:hover {
++    .product-card .addProduct:hover {
+         opacity: 0.7;
+     }
+ 
+Index: target/classes/templates/view-cart.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/classes/templates/view-cart.html	(date 1562921411664)
++++ target/classes/templates/view-cart.html	(date 1562921411664)
+@@ -0,0 +1,43 @@
++<!DOCTYPE html>
++<html lang="en" xmlns:th="http://www.thymeleaf.org">
++<head>
++    <meta charset="UTF-8">
++    <title>Cart</title>
++    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
++    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
++    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
++    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
++</head>
++<body>
++
++    <div class="container-fluid">
++        <nav th:replace="fragments/header :: header"></nav>
++
++        <div class="cart">
++            <table class="table">
++                <thead>
++                    <tr>
++                        <th scope="col">#</th>
++                        <th scope="col">Name</th>
++                        <th scope="col">Quantity</th>
++                        <th scope="col">Price</th>
++                        <th scope="col">Option</th>
++                    </tr>
++                </thead>
++                <tbody th:if="${cartItems == 'null'}">
++                    <th colspan="4">No Product</th>
++                </tbody>
++                <tbody th:if="${cartItems != 'null'}">
++                    <tr th:each="cartItemDTO,i : ${cartItems}">
++                        <th scope="row" ><span th:text="${i.index + 1 }"></span></th>
++                        <td scope="row" ><span th:text="${cartItemDTO.getProductDTO().getProductName()}"></span></td>
++                        <td><span th:text="${cartItemDTO.getQuantity()}"></span></td>
++                        <td><span th:text="${cartItemDTO.getProductDTO().getProductPrice()}"></span></td>
++                        <td> Delete </td>
++                    </tr>
++                </tbody>
++            </table>
++        </div>
++    </div>
++</body>
++</html>
+\ No newline at end of file
+Index: src/main/resources/templates/view-product-category.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/resources/templates/view-product-category.html	(date 1562749622000)
++++ src/main/resources/templates/view-product-category.html	(date 1562900273472)
+@@ -36,7 +36,8 @@
+         font-size: 18px;
+     }
+ 
+-    .product-card button {
++    .product-card .addProduct {
++        display: inline-block;
+         position: absolute;
+         left: 0;
+         bottom: 5px;
+@@ -51,7 +52,7 @@
+         font-size: 18px;
+     }
+ 
+-    .product-card button:hover {
++    .product-card .addProduct:hover {
+         opacity: 0.7;
+     }
+ 
+Index: target/classes/templates/view-product.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/classes/templates/view-product.html	(date 1562749622000)
++++ target/classes/templates/view-product.html	(date 1562920614582)
+@@ -130,6 +130,8 @@
+ </style>
+ <body>
+ <div class="container-fluid">
++    <nav th:replace="fragments/header :: header"></nav>
++
+     <br>
+     <div class="row">
+         <div class="col-sm-4">
+@@ -174,6 +176,9 @@
+                 <span>USD $</span>
+                 <span th:text="${productDTO.getProductPrice()}"></span>
+             </div>
++            <div>
++                <a class="addProduct" th:href="@{/product/add-to-cart/{id}(id=${productDTO.getProductId()})}">Add to Cart</a>
++            </div>
+         </div>
+     </div>
+ 
+@@ -201,12 +206,4 @@
+             slides[i].style.display = "none";
+         }
+         for (i = 0; i < dots.length; i++) {
+-            dots[i].className = dots[i].className.replace(" active", "");
+-        }
+-        slides[slideIndex-1].style.display = "block";
+-        dots[slideIndex-1].className += " active";
+-    }
+-</script>
+-
+-</body>
+-</html>
+\ No newline at end of file
++    
+\ No newline at end of file
+Index: src/main/java/huynh198/com/github/entity/CartItem.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/huynh198/com/github/entity/CartItem.java	(date 1562749622000)
++++ src/main/java/huynh198/com/github/entity/CartItem.java	(date 1562861146369)
+@@ -11,7 +11,7 @@
+ 
+     @Id
+     @GeneratedValue(strategy = GenerationType.AUTO)
+-    private String cartItemId;
++    private int cartItemId;
+ 
+ 
+     private int quantity;
+@@ -34,11 +34,11 @@
+         this.cart = cart;
+     }
+ 
+-    public String getCartItemId() {
++    public int getCartItemId() {
+         return cartItemId;
+     }
+ 
+-    public void setCartItemId(String cartItemId) {
++    public void setCartItemId(int cartItemId) {
+         this.cartItemId = cartItemId;
+     }
+ 
+Index: target/classes/templates/fragments/product-card.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/classes/templates/fragments/product-card.html	(date 1562749622000)
++++ target/classes/templates/fragments/product-card.html	(date 1562917882936)
+@@ -1,3 +1,6 @@
++
++<html lang="en" xmlns:th="http://www.thymeleaf.org">
++
+ <div  th:fragment="product-card" class="product-card">
+     <a th:href="@{/product/{id}(id=${product.getProductId()})}">
+         <img th:src="@{${product.getOneImage()}}">
+@@ -14,5 +17,7 @@
+         <span>By </span>
+         <span th:text="${product.getCategory()}"></span>
+     </p>
+-    <p><button>Add to Cart</button></p>
++    <p>
++        <a class="addProduct" th:href="@{/product/add-to-cart/{id}(id=${product.getProductId()})}">Add to Cart</a>
++    </p>
+ </div>
+\ No newline at end of file
+Index: target/classes/templates/fragments/header.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/classes/templates/fragments/header.html	(date 1562749622000)
++++ target/classes/templates/fragments/header.html	(date 1562915790781)
+@@ -15,7 +15,7 @@
+             </li>
+         </ul>
+         <div class="cart-container">
+-            <a class="cart-link" href="#menu">
++            <a class="cart-link" th:href="@{/cart}">
+                 <span class="cart-text fontawesome-shopping-cart">
+                   <span>Cart</span>
+                 </span>
+@@ -23,4 +23,4 @@
+             </a>
+         </div>
+     </div>
+-</nav>
++</
+\ No newline at end of file
+Index: target/classes/templates/view-product-category.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/classes/templates/view-product-category.html	(date 1562749622000)
++++ target/classes/templates/view-product-category.html	(date 1562900273472)
+@@ -36,7 +36,8 @@
+         font-size: 18px;
+     }
+ 
+-    .product-card button {
++    .product-card .addProduct {
++        display: inline-block;
+         position: absolute;
+         left: 0;
+         bottom: 5px;
+@@ -51,7 +52,7 @@
+         font-size: 18px;
+     }
+ 
+-    .product-card button:hover {
++    .product-card .addProduct:hover {
+         opacity: 0.7;
+     }
+ 
+Index: target/classes/templates/view-all-product.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/classes/templates/view-all-product.html	(date 1562749622000)
++++ target/classes/templates/view-all-product.html	(date 1562900343822)
+@@ -36,7 +36,7 @@
+         font-size: 18px;
+     }
+ 
+-    .product-card button {
++    .product-card .addProduct {
+         position: absolute;
+         left: 0;
+         bottom: 5px;
+@@ -51,7 +51,7 @@
+         font-size: 18px;
+     }
+ 
+-    .product-card button:hover {
++    .product-card .addProduct:hover {
+         opacity: 0.7;
+     }
+ 
+diff --git target/classes/huynh198/com/github/model/CartDTO.class target/classes/huynh198/com/github/model/CartDTO.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..650328fba49fbaba9e84e0c91cd6db0d24f881a6
+GIT binary patch
+literal 1637
+zc$}4$+fLg+5QhJa69<O`Qo^AWTAGGJVkmCaUKD}20adD$5+o4!PGTiSIaJQ35;uLN
+z7OALGFZuv|sH!t-$1x@dDl5C|*_nU7omne?{{H$6;2mCPpu;qf!WIwPJiJO{Ck;zL
+zZ`hvv*c6znUf5r3t7G?C)~WQ|UTaTaO6^LgE0Fj1htlm>Rd*n1*En@sJzEYvM_@O$
+zy<cq)FMI7byYH<=ziYKz*&f!dZolbttiwR`=&ZJPKsp)Omv-mGa~mWijtFYs?YZ(m
+zV55ASD$a3KITuJClCr>T)$KXQ!*1R2&g^=};bZk1cIVvoTz(IXN!fM>0;PKxnNMKx
+zro!dtkxKrPBisGviS5~4M>-xU*6!zhcwyARv@(xI%aMmcqvp$%Nv$#lW0!>q7%VeA
+zl2IL<8wo{wx_8U?Kb@Q&L=zOsaeao^k6Ry}fWvcihO@|hp#ss3$qjB=lVw%C%xQn<
+zHJlGF_bVIpbcfStF^lCa(wNG^KqiYEW(11&UI=RYxU{wUh0~BI(g&r}r=}sng0xDo
+zCa4~2ouwbi(|U?*v&fU@BYOKvbBgA9^CyJ4b&Z6%eGSd5TqAj<^yX+>R6aQ*Nx`7#
+z8Hz7Ze1WVcSt*{L1wgIRDhIEaAfZ;ATO%D1$!L$6mRMJ#5RidWAOL=>Fqdg$%(pai
+zSc);Plmm15>IEX0S1i7EDqs<Kf|WqP3I%>3@jVpKm2qie@G72?7Y85E%!zbWpm_Qf
+zidj_(i@sM_3Oy(VA2KD>AqAdcEs%{eX>q2t2~2)vo|CPJ7eND0qHNl@Wj<SpV%P6r
+z^RLIaCAw-!NNa=%OJrQf%dnD(kUIG-M!h+)k{e_nRZ^peX*Yul7OmtK|25n}%NHnQ
+L%PHBi3a|VFSK=m=
+
+diff --git target/classes/huynh198/com/github/controller/CartController.class target/classes/huynh198/com/github/controller/CartController.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..a5665619c329205d2af9f6e6f45e8ebfbdeb82db
+GIT binary patch
+literal 3636
+zc$~FYNpMqT9RGdUUXniA5(N!lDT|Plh6gSPX$4BlQY}ykg4XpVc_fdfdG+O`rQ(Vr
+zuDIfM(StLb9C5~}Q*j(`&N$<YGhV!U^W@o4NBn&+TO*lL4<7O@|NNKVfBlm0|NiP5
+z0Jq_TFxDUyLN|`K;a(gI;&>Ydai4<w!w4XyU@VLvQgV4fE)UA(p)mH~VR?E)!J}bx
+zAk~Jw(4|OP%4g&$D``d>_ThwFa*{tUCCxSr;baiwK@@_RkhfwGmV!wIj|sF-+E%ul
+zaZ-joWo8V4-jRHHrkLNlW4o5ICbXRC<jZNTRQXyPZQ|||h#n~y9dp7sW|qu!!5AnO
+zEk}1ut5_1)K4RH9tu$$y#oP&7pD?B^dt6H!da<OP&@+x@&uDsGKpQAK*0gCGS*i{6
+zn?=*vDd3I8j|un&tt_#1jF?5^P<bM4*hh6*6Nrph8NF~!w@rDk5`9kIq<O8SCmE~g
+z*jAxn*xI0OJA?Hrt+wY3r|RLJnc=KJDmFZFQlHXKxdA8`j+S?vN$mialu;@Xbze&#
+z%cgdahzosjS6nOT#hjLMBooaj85$lsdRSmxONbLv)I~=o^0!I;VaJ$oWj0<zrpidU
+zj(Kt;X2}ugtiUNdW<iq_GWkvv^qhbg69`pnL3%ERX*b{SQ=t1=kr42^C<M9|4vIjy
+zYRPqI!vYSC*7+#4ygAu3leL8J_?KJ#iwx0DDqWIt^vw7{ebUvXz*bOF;3z07m}0~Z
+z8cyEIj_T44$FNyfx3%<c+DL0@vzVP<(fbXDiYF^s_fP4CGQoChRp&K5n@u=YLS{)j
+zU61{f0&AO_s&2fgyS6PF#;ES(Yf&SR;FM`h%P<HWiTw}d?bkA{@^H#3+Zkh@DN}S^
+zbF*!hasr!LsxQ%1!*ZBkZC-n-*no{H)?%H4X%z{aV)05#DrWGwz?y5elEBT2stXmT
+z@q~&e@sx_E@r;URaYn^+c%E)F3T?o)^%+@hD$e2s73c7xikI-RidXQeiq~*n#p`%O
+z#hZ9b#oKsC#RaMCUA!l-lw*#gF5@I?)xh?vwJVeBE0zld$@@O(GGB>GOcVcUq_KP(
+z`8k|EX-G5c7t?L*;e`uBVAVpE!CBhek{s0y0-dyVj(>rk#XmLz@z`*Dv9m(uC?9ZG
+zlIgNT(G9VyD|LSHR)QnPL8<-(xM7IL7H3huQf-vIr>wJeof)Q(XeBW>pUCHogSDga
+z&WzfwYoremG!-0W*A@mX88KgMNNVtMP6#ZET@5!rRxw(uUDjvp-xFSHkb36@V`Gb8
+zv`}6J-%uWj#jk!pf@VFL%bUKhC0RardA)SVIOVv0j>+nFFW1Lfry$pyf>`W7Wqq{q
+zh^dU+Jil*g6~b#hRYQvl*1~G|yRVxcK=8u}#(h0c0q!?*_j2cO;~L{l<1YF9Jzqk6
+z&VvW>Dl-s44_CFqfKBLil_szmJ}K<^l+-XuxAuGi&&oM?JxKa`BfdHKJ@^h|ml3%C
+zODIYIWdwN$B?Hkw)HjQ8G{Cium%uF4bCR@Vd=~AO(LuJ(q!Lx4fjKPo;CR#@Rb~;P
+z(x`t9*LiUfpVcgUi$KyJ_0Qt^WWc-46<H>b3`T=<ST67ZcFNNYf{ejrC>ol@jkAcZ
+z{21$^?oIVQDp6F<4HUj@%Ec?+EK@#2Ukx`^R&WPh+`KkP(2-yrZlDQn6V`+zt{_`v
+z<t2vF=Z5+WvjwbRm{;Kj+{9ZK>8r7Yr)|vRe&%qLSsY{bbmncGp)Zo-G?R0NDLKn@
+ze8N0lqQuwOiXU(be&ip3pD6t^?!YhDj$g3@zafb$=o2CIi%#qkE3ijw#Gu&1AL%m9
+z=h04!cT>|ArZvuA^INGYK-(*EEA=U~((BSf)Tz0rAW?i&l{ka<UA_PjUBK<MuE^4;
+zmW@2!K_tRG?I0G9d+I|!D^ewrJFyc!?rK%vE($FtSH=ErYO7e-O$!73ZVLi`p{QWb
+z6$UG$pj#*yR4_z}f`Ed(yzc}4#K0f$^#4xO`zf`=OBf&k&@|k}XeX!x{0u(;QNmpe
+z0njPCWJD56F2Ah%gE&N}vS}`G_i^96sgd17iSMwqH?k^n(;T|IIDQeGyd_wim3w6M
+zCAazFu3LVt!*um-bka;0o!o>YZW?+jnrmU>Nd`-}CmAdc<j)crBCi{U5IldOiyo`4
+Ve<9BTz8!YMDSP~$`bane`~$j5u$lk>
+
+diff --git target/classes/huynh198/com/github/service/CartService.class target/classes/huynh198/com/github/service/CartService.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..7936f92495aa6833f97e4eb7668f66a592f213f3
+GIT binary patch
+literal 243
+zc${60y9&ZU5Jm6CJbV>4euLV$2o_okf`u4R?AP7FL=qR)jo`0Y_yK;DI6(_>x^wS6
+z%=2}B0GOhipq-#2&{M{w&YDX5on0vB1;XKKwC83`KC>oOPL<@zT?B&M2=omV%wK8g
+zZ28gJTU$9z%e)|#>ugKznrj-L)Kv)#vg&ruCi9upwv@-*XVpPoJ`?#fXSo(+q0UFS
+gIh;uQSb(3Sz91B6AY_i1B7qp-DEW&Rn)Mp3H$-+iK>z>%
+
+diff --git target/classes/huynh198/com/github/service/CartServiceImpl.class target/classes/huynh198/com/github/service/CartServiceImpl.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..8399e860e8dcbf6daff2de01e99ba51e0e2d05a1
+GIT binary patch
+literal 607
+zc$}3`O-sW-5PjRPXsx!^wtDqsRWt|+isGeEC{!)9^uEb1&6Xr9+oa&n@+5fh2l%7J
+z*`y~uST8g4X6C&&yPse09{?_KP(=|f2W<x(2m1__I~A+so}t)1o-&krT1bZaP{r~w
+zjXY^4+zYAG9BQA3Q*M;St7a())Pmt`7^E+8aB*|(`Z{uFDhX20T}ZQ3zI1!sB;&ju
+zM9<+ZLxT%3GFqg5GSPNSO5K6AFDSvl2DI`ZlR%3RH$0MwH0072GNf`v>>C~B)aqEL
+z#+Q9%FKYd8JD>9<uc3?z!|6Y+qzf$54S76spS-#B$?0fK0UV-0-%PKfKew6eDLRB)
+z%8YXP<PGeViUKw$R<dRhn-pvL0;<@e%m{DOmL*?h`}j?CGGZqmu86kUL7ig5%2{Ar
+OyML?I)>mt0)V*&;33fgJ
+
+diff --git target/classes/huynh198/com/github/model/CartItemDTO.class target/classes/huynh198/com/github/model/CartItemDTO.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..106229844ab22e310bd5d810e75888dff9c20130
+GIT binary patch
+literal 1542
+zc$|%s*>2NN5QhH~+ezy<G~IV7(8X~Vg8&Hx>P;e~NQD+r_1;OW##Iu7bAr@69ta7L
+zh>*D80eC3H%t`8|mWy(8)|r34^LzZ~@2}qgp29VegFT5XN<26`?DDXe!+s720%qNd
+zWL5g@YC}L&1tvcByp9ayrNE>NrPnHlT}f9Jiv19Ujb2?=PLBn)kD9&9PV@1L=Wac0
+zyXS#y_G)fBZ1^qrB#wJ2kbM<&0(mH~XIHD0@v=&10(zNF1*VRIj{mmTuKCfaS8LJ9
+z%u!hPT4!Dq@P2rx%Vy9O*!hosdHB)+R`HE5n_=U`i@dfk{fLq^o9h<NeOVqcg-*$q
+zLigsWZdW-tPr>hE!}8tHoke%2*A9{nd1!TS9O`!Es^-avxwc&z*Iou2O)c5uTWr1$
+zdr{qg9k7GN5q}OYyicBmDJ)u;z@!C}hde9`1>6zX8p~zUWF5EVb<W-6+J#@2xKGWO
+zqu$h!VP#rnSX|AduVyMivkCh6DAInKcAue9Ca~iCgm6~-$T(|#XiljQ-B~vJFutqY
+z8IDnr1*&m}l&5GcVwO~v>2_BA7lw+O!#to?Od`~ZSu$$HG@4p5kAVeRPwN!QXrOB@
+z0R_28BSSu+nPm)yyyh{L;vDhJtNPX;XjorhiO2>5ZY=NvnJ=+GRvj*-Ca++1Xwf0f
+zTqvvTNtR!uoOPwJFo=qupB+A*A7}{mKtbVYOj?p@Bb8}Aok>eFZBowGEllPplc{9y
+z;$F;@iJA1T2_`$0X@gqtib+!+HtXzA^CX$}C};l`ro2)eGUb)*13XOe$@rFFdX&nv
+eNv}`(w0onK2Ta_s&u(Gj=8TyJ4Y{q-cm4rd5aZSW
+
+diff --git target/classes/huynh198/com/github/entity/CartItem.class target/classes/huynh198/com/github/entity/CartItem.class
+index 45009568d1dea06ee1cb9e629f9e7788ef5f4f18..f9004be571a7a25e0ec228c05d5bdaa876de6068
+GIT binary patch
+literal 2086
+zc$|%tZ&wpX6vm$oy9tCKXepSWR1h(QmaW?Q55;0o8x9s)W8U^`k~w5O$t-4PJ*Dsb
+zK7CQoDW~W7!Vlng=qKoR@c7JRNoib=7nzwmbMJkAGxuiSe|Y;2z<2mDi(#ydAcF^b
+z_(2crdU&XZat0e2Jj&p)g^5sfeXm^;-Ovx@^U8(=YtzD5Igp|9q^f!CNI3ueTi=^c
+zRh5No!|SSw5}ituo)ruEUm~gej;Q&eUvG<bDFfvx<_axLZN2bbdB3@PI(w*uYzVi~
+zT(vNtaPUM((e;#Q8c8}0hf3SK`zQKSsk*<X{q6PV)oq5ojL7XPhK(q)w97$AaEmv~
+z>~(`?)S$Jn)r$6I>)M^$ZX@WpyS{2gbyt`;cc<sYlou0ppL%k?8f;4~Ih%048Thgs
+zw4;vHOw#KJg2cl5(QN&K7UoVODAR?}Y4g~ON#FCOuhuMV7AqU4LH}&>r5Z`fL6dOf
+zTfP)OMV-3nRy~%`!nv)W!JhEg8MNa~TeW=F^vdT_>*gT)#8aVKL379J@&y#%hfTFB
+zRQX8z3>BByKx5(mckN<D!;RAU=YAze!=qM~XFG?bTr4h~u9(^INYvHhX@WFJCZ@J<
+z`DCTIXqoWPf8j)pei^dQf~eaNkA3~hV~0<%qC3k%A)&(_nFN%|Cmfn;@oYr*&aXZ*
+z<!~8Ka+t<M4(E~2p@5kjE@3W*aZK=9rzj}vsioYuCwJZL`U|1oaMEn~f&0vSL;T-+
+zjl#0lFvsuAFo=OP^|Bb{I>&EQ3S<0Hm-boOXK9_|`~~evfiE$|4Wb%X(wdpTvHLi!
+z3!E>~o(=I8O<pAVaGv749TvEKh1;(&L>OSE^f#>1%mGrR;sJ(AdHVo%DeoM>d1K@j
+zITnoTENp6wP~!|$CYiFpgjdZs*3qd@#1ddu)8<ZkrLj|HrNM2p(v%KL`o=b0K_@K&
+z9)MxX_?n}pbUEuZPU$bC|LF6i&E}%f&h;E(Z42LECBEVsXRVyp*GvC*o2=O_F=p9h
+znCf};>C<sVG@rvSf=TNpGNlHYRuY-MO=e0BGF@lPjboUmk1|c0wAUE$DU<!@0MpGx
+zrW>r<Ak#8yKge{KF{{Tg^;$7zDwwq2Q|?nHXOL+vk?9t0CowsLOb;1TK8C6H4~UsA
+UnZP?{yxad<ta85B`&-=q2s!|l@Bjb+
+
