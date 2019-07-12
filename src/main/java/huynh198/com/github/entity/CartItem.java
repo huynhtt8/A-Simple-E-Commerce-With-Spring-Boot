@@ -11,7 +11,7 @@ public class CartItem implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String cartItemId;
+    private int cartItemId;
 
 
     private int quantity;
@@ -34,11 +34,11 @@ public class CartItem implements Serializable {
         this.cart = cart;
     }
 
-    public String getCartItemId() {
+    public int getCartItemId() {
         return cartItemId;
     }
 
-    public void setCartItemId(String cartItemId) {
+    public void setCartItemId(int cartItemId) {
         this.cartItemId = cartItemId;
     }
 

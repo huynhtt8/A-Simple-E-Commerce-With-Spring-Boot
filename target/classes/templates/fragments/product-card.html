@@ -1,3 +1,6 @@
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <div  th:fragment="product-card" class="product-card">
     <a th:href="@{/product/{id}(id=${product.getProductId()})}">
         <img th:src="@{${product.getOneImage()}}">
@@ -14,5 +17,7 @@
         <span>By </span>
         <span th:text="${product.getCategory()}"></span>
     </p>
-    <p><button>Add to Cart</button></p>
+    <p>
+        <a class="addProduct" th:href="@{/product/add-to-cart/{id}(id=${product.getProductId()})}">Add to Cart</a>
+    </p>
 </div>

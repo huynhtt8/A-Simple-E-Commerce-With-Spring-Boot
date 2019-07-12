@@ -130,6 +130,8 @@
 </style>
 <body>
 <div class="container-fluid">
+    <nav th:replace="fragments/header :: header"></nav>
+
     <br>
     <div class="row">
         <div class="col-sm-4">
@@ -173,6 +175,9 @@
             <div class="price-product">
                 <span>USD $</span>
                 <span th:text="${productDTO.getProductPrice()}"></span>
+            </div>
+            <div>
+                <a class="addProduct" th:href="@{/product/add-to-cart/{id}(id=${productDTO.getProductId()})}">Add to Cart</a>
             </div>
         </div>
     </div>
