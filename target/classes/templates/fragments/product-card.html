@@ -1,7 +1,6 @@
-
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
-<div  th:fragment="product-card" class="product-card">
+<div th:fragment="product-card" class="product-card">
     <a th:href="@{/product/{id}(id=${product.getProductId()})}">
         <img th:src="@{${product.getOneImage()}}">
     </a>
@@ -18,6 +17,9 @@
         <span th:text="${product.getCategory()}"></span>
     </p>
     <p>
-        <a class="addProduct" th:href="@{/product/add-to-cart/{id}(id=${product.getProductId()})}">Add to Cart</a>
+<!--        <a class="addProduct" th:href="@{/product/add-to-cart/{id}(id=${product.getProductId()})}">Add to Cart</a>-->
+        <a  th:id="'product-card-' + ${product.getProductId()} " class="addProduct"  th:onclick="'javascript:addProductToCart(' + ${product.getProductId()} + ');'">Add to Cart</a>
+
     </p>
 </div>
+

@@ -8,36 +8,89 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body>
+<style>
+    body {
+        margin-top: 100px;
+    }
+    .list-info-price .amount {
+        color: #fe3834;
+        font-size: 22px;
+        font-weight: 400;
+    }
 
-<div class="container-fluid">
+    .list-info-price .total-price {
+        padding: 10px;
+    }
+</style>
+<body onload="generate_table_cart()">
+
+<div class="container">
     <nav th:replace="fragments/header :: header"></nav>
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Cart</h4>
+        </div>
+        <div class="col-md-8">
+            <div class="cart">
+                <table class="table">
+                    <thead>
+                    <tr>
+<!--                        <th scope="col">#</th>-->
+                        <th scope="col">Name</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Option</th>
+                    </tr>
+                    </thead>
+                    <tbody id="cartItem">
 
-    <div class="cart">
-        <table class="table">
-            <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Quantity</th>
-                <th scope="col">Price</th>
-                <th scope="col">Option</th>
-            </tr>
-            </thead>
-            <tbody th:if="${cartItems == 'null'}">
-            <th colspan="4">No Product</th>
-            </tbody>
-            <tbody th:if="${cartItems != 'null'}">
-            <tr th:each="cartItemDTO,i : ${cartItems}">
-                <th scope="row"><span th:text="${i.index + 1 }"></span></th>
-                <td scope="row"><span th:text="${cartItemDTO.getProductDTO().getProductName()}"></span></td>
-                <td><span th:text="${cartItemDTO.getQuantity()}"></span></td>
-                <td><span th:text="${cartItemDTO.getProductDTO().getProductPrice()}"></span></td>
-                <td> Delete</td>
-            </tr>
-            </tbody>
-        </table>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+            <div class="total-price">
+                <p class="list-info-price">
+                    <span>Total</span>
+                    <strong class="amount"></strong>
+                </p>
+            </div>
+            <button type="button" class="btn btn-large btn-block btn-danger btn-checkout">Checkout</button>
+        </div>
     </div>
+
+
+    <!--    <div class="cart">-->
+<!--        <table class="table">-->
+<!--            <thead>-->
+<!--            <tr>-->
+<!--                <th scope="col">#</th>-->
+<!--                <th scope="col">Name</th>-->
+<!--                <th scope="col">Quantity</th>-->
+<!--                <th scope="col">Price</th>-->
+<!--                <th scope="col">Option</th>-->
+<!--            </tr>-->
+<!--            </thead>-->
+<!--            <tbody th:if="${cartItems == 'null'}">-->
+<!--            <th colspan="4">No Product</th>-->
+<!--            </tbody>-->
+<!--            <tbody th:if="${cartItems != 'null'}">-->
+<!--            <tr th:each="cartItemDTO,i : ${cartItems}">-->
+<!--                <th scope="row"><span th:text="${i.index + 1 }"></span></th>-->
+<!--                <td scope="row"><span th:text="${cartItemDTO.getProductDTO().getProductName()}"></span></td>-->
+<!--                <td><span th:text="${cartItemDTO.getQuantity()}"></span></td>-->
+<!--                <td><span th:text="${cartItemDTO.getProductDTO().getProductPrice()}"></span></td>-->
+<!--                <td> Delete</td>-->
+<!--            </tr>-->
+<!--            </tbody>-->
+<!--        </table>-->
+<!--    </div>-->
 </div>
+<script type="text/javascript"
+        src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>

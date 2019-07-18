@@ -1,7 +1,5 @@
 package huynh198.com.github.model;
 
-import huynh198.com.github.entity.Category;
-
 import java.util.List;
 
 public class ProductDTO {
